@@ -29,7 +29,7 @@ import Table from '@ckeditor/ckeditor5-table/src/table'
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar'
 
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment'
-
+import TextColor from 'ckeditor-text-color-select/src/textcolor'
 export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
@@ -56,6 +56,7 @@ ClassicEditor.builtinPlugins = [
 	Table,
 	TableToolbar,
 	Alignment,
+	TextColor,
 ]
 
 // Editor configuration.
@@ -76,6 +77,7 @@ ClassicEditor.defaultConfig = {
 			'undo',
 			'redo',
 			'alignment',
+			'textColor',
 		],
 	},
 	image: {
