@@ -29,6 +29,10 @@ import Table from '@ckeditor/ckeditor5-table/src/table'
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar'
 
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment'
+import Font from '@ckeditor/ckeditor5-font/src/font'
+import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline'
+import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough'
+import Code from '@ckeditor/ckeditor5-basic-styles/src/code'
 export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
@@ -55,6 +59,10 @@ ClassicEditor.builtinPlugins = [
 	Table,
 	TableToolbar,
 	Alignment,
+	Font,
+	Underline,
+	Strikethrough,
+	Code,
 ]
 
 // Editor configuration.
@@ -75,6 +83,74 @@ ClassicEditor.defaultConfig = {
 			'undo',
 			'redo',
 			'alignment',
+			'fontFamily',
+			'fontSize',
+			'fontColor',
+			'fontBackgroundColor',
+			'underline',
+			'strikethrough',
+			'code',
+		],
+	},
+	fontFamily: {
+		options: [
+			// TODO => Add secure web fonts groups
+			'default',
+			'Ubuntu, Arial, sans-serif',
+			'Ubuntu Mono, Courier New, Courier, monospace',
+		],
+	},
+	fontSize: {
+		options: ['default', 10, 12, 14, 16, 18, 20, 22],
+	},
+	fontColor: {
+		colors: [
+			// TODO => Add Promotool colors (include basic brandings)
+			{
+				color: 'hsl(0, 0%, 0%)',
+				label: 'Black',
+			},
+			{
+				color: 'hsl(0, 0%, 30%)',
+				label: 'Dim grey',
+			},
+			{
+				color: '#99CC00',
+				label: 'Green',
+			},
+			{
+				color: 'hsl(0, 0%, 90%)',
+				label: 'Light grey',
+			},
+			{
+				color: 'hsl(0, 0%, 100%)',
+				label: 'White',
+				hasBorder: true,
+			},
+		],
+	},
+	fontBackgroundColor: {
+		colors: [
+			{
+				color: 'hsl(0, 75%, 60%)',
+				label: 'Red',
+			},
+			{
+				color: 'hsl(30, 75%, 60%)',
+				label: 'Orange',
+			},
+			{
+				color: 'hsl(60, 75%, 60%)',
+				label: 'Yellow',
+			},
+			{
+				color: 'hsl(90, 75%, 60%)',
+				label: 'Light green',
+			},
+			{
+				color: 'hsl(120, 75%, 60%)',
+				label: 'Green',
+			},
 		],
 	},
 	image: {
