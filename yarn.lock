@@ -180,6 +180,15 @@
     "@ckeditor/ckeditor5-typing" "^12.1.1"
     "@ckeditor/ckeditor5-undo" "^11.0.4"
 
+"@ckeditor/ckeditor5-font@^11.2.1":
+  version "11.2.1"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-font/-/ckeditor5-font-11.2.1.tgz#98133714e57ac70832784be24785eecb8aa1e080"
+  integrity sha512-WllXgqHlI0DW50Cb9/dyhFBED1i3X/vYbOKpPrpChbKCWhdZiwkb/HuthIf0oEzPRfRiSllyx062pb2v2JNaaQ==
+  dependencies:
+    "@ckeditor/ckeditor5-core" "^12.2.1"
+    "@ckeditor/ckeditor5-ui" "^13.0.2"
+    "@ckeditor/ckeditor5-utils" "^13.0.1"
+
 "@ckeditor/ckeditor5-heading@^11.0.4":
   version "11.0.4"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-heading/-/ckeditor5-heading-11.0.4.tgz#4856b055d0f6084d89571f472bf5bbdd2fe14dd7"
