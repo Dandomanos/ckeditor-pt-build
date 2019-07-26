@@ -272,6 +272,16 @@
     "@ckeditor/ckeditor5-core" "^12.2.1"
     "@ckeditor/ckeditor5-engine" "^13.2.1"
 
+"@ckeditor/ckeditor5-remove-format@^10.0.3":
+  version "10.0.3"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-remove-format/-/ckeditor5-remove-format-10.0.3.tgz#4635bc0723144d3cd81c3cfd5be4b7455d792f0b"
+  integrity sha512-MJuvp4y3igU+iRhha5uq8+GDlXkYwSKFU5vOeYLnDUMLgO1q9vfKbhjrubBkGK3XB1d9+NLAaNkYhhfIBzfLtw==
+  dependencies:
+    "@ckeditor/ckeditor5-core" "^12.2.1"
+    "@ckeditor/ckeditor5-ui" "^13.0.2"
+    "@ckeditor/ckeditor5-utils" "^13.0.1"
+    eslint-plugin-ckeditor5-rules "^0.0.2"
+
 "@ckeditor/ckeditor5-table@^13.0.2":
   version "13.0.2"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-table/-/ckeditor5-table-13.0.2.tgz#95f985bfb89443aa7ae4d0c2fa56baff8c3171e5"
@@ -1860,6 +1870,11 @@ eslint-module-utils@^2.4.0:
   dependencies:
     debug "^2.6.8"
     pkg-dir "^2.0.0"
+
+eslint-plugin-ckeditor5-rules@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-ckeditor5-rules/-/eslint-plugin-ckeditor5-rules-0.0.2.tgz#f6325c6d046b41f05423c3a18bb9794b37c80baf"
+  integrity sha512-bV8w34pQcn1IyfdW1IEgfKuc1/hkTYpLo1DglRp1v4a2ph03PkMjN7vZ6FDrmu5ImVDJsd9022j5waA//MeyKg==
 
 eslint-plugin-ckeditor5-rules@^0.0.3:
   version "0.0.3"
