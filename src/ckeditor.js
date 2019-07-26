@@ -33,6 +33,8 @@ import Font from '@ckeditor/ckeditor5-font/src/font'
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline'
 import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough'
 import Code from '@ckeditor/ckeditor5-basic-styles/src/code'
+import Indent from '@ckeditor/ckeditor5-indent/src/indent'
+import IndentBlock from '@ckeditor/ckeditor5-indent/src/indentblock'
 export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
@@ -63,6 +65,8 @@ ClassicEditor.builtinPlugins = [
 	Underline,
 	Strikethrough,
 	Code,
+	Indent,
+	IndentBlock,
 ]
 
 // Editor configuration.
@@ -73,29 +77,44 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'bold',
 			'italic',
-			'link',
+			'underline',
+			'strikethrough',
+			'|',
 			'bulletedList',
 			'numberedList',
-			'imageUpload',
-			'blockQuote',
-			'insertTable',
-			'mediaEmbed',
-			'undo',
-			'redo',
+			'outdent',
+			'indent',
+			'|',
 			'alignment',
 			'fontFamily',
 			'fontSize',
 			'fontColor',
 			'fontBackgroundColor',
-			'underline',
-			'strikethrough',
+			'|',
+			'link',
+			'blockQuote',
 			'code',
+			'insertTable',
+			'|',
+			'imageUpload',
+			'mediaEmbed',
+			'|',
+			'undo',
+			'redo',
 		],
 	},
 	fontFamily: {
 		options: [
-			// TODO => Add secure web fonts groups
 			'default',
+			'Arial, Helvetica, sans-serif',
+			'Courier New, Courier, monospace',
+			'Georgia, serif',
+			'Lucida Sans Unicode, Lucida Grande, sans-serif',
+			'Tahoma, Geneva, sans-serif',
+			'Times New Roman, Times, serif',
+			'Trebuchet MS, Helvetica, sans-serif',
+			'Verdana, Geneva, sans-serif',
+
 			'Ubuntu, Arial, sans-serif',
 			'Ubuntu Mono, Courier New, Courier, monospace',
 		],
@@ -158,6 +177,10 @@ ClassicEditor.defaultConfig = {
 	},
 	table: {
 		contentToolbar: ['tableColumn', 'tableRow', 'mergeTableCells'],
+	},
+	indentBlock: {
+		offset: 1,
+		unit: 'rem',
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
 	language: 'en',
