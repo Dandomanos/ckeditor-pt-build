@@ -29,7 +29,7 @@ import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough'
 import Code from '@ckeditor/ckeditor5-basic-styles/src/code'
 import Indent from '@ckeditor/ckeditor5-indent/src/indent'
 import IndentBlock from '@ckeditor/ckeditor5-indent/src/indentblock'
-// import BlockToolbar from '@ckeditor/ckeditor5-ui/src/toolbar/block/blocktoolbar'
+import BlockToolbar from '@ckeditor/ckeditor5-ui/src/toolbar/block/blocktoolbar'
 import HeadingButtonsUI from '@ckeditor/ckeditor5-heading/src/headingbuttonsui'
 import ParagraphButtonUI from '@ckeditor/ckeditor5-paragraph/src/paragraphbuttonui'
 import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat'
@@ -69,7 +69,7 @@ ClassicEditor.builtinPlugins = [
 	Code,
 	Indent,
 	IndentBlock,
-	// BlockToolbar,
+	BlockToolbar,
 	HeadingButtonsUI,
 	ParagraphButtonUI,
 	RemoveFormat,
@@ -84,19 +84,19 @@ ClassicEditor.builtinPlugins = [
 
 // Editor configuration.
 ClassicEditor.defaultConfig = {
-	// blockToolbar: [
-	// 	'paragraph',
-	// 	'heading1',
-	// 	'heading2',
-	// 	'heading3',
-	// 	'|',
-	// 	'alignment',
-	// 	'|',
-	// 	'bulletedList',
-	// 	'numberedList',
-	// 	'outdent',
-	// 	'indent',
-	// ],
+	blockToolbar: [
+		// 'paragraph',
+		// 'heading1',
+		// 'heading2',
+		// 'heading3',
+		// '|',
+		// 'alignment',
+		// '|',
+		'bulletedList',
+		'numberedList',
+		'outdent',
+		'indent',
+	],
 	toolbar: {
 		items: [
 			'heading',
@@ -111,11 +111,6 @@ ClassicEditor.defaultConfig = {
 			'fontSize',
 			'fontColor',
 			'fontBackgroundColor',
-			'|',
-			'bulletedList',
-			'numberedList',
-			'outdent',
-			'indent',
 			'|',
 			'removeFormat',
 			'|',
@@ -151,28 +146,6 @@ ClassicEditor.defaultConfig = {
 	},
 	fontBackgroundColor: {
 		colors: ptColors,
-		// [
-		// 	{
-		// 		color: 'hsl(0, 75%, 60%)',
-		// 		label: 'Red',
-		// 	},
-		// 	{
-		// 		color: 'hsl(30, 75%, 60%)',
-		// 		label: 'Orange',
-		// 	},
-		// 	{
-		// 		color: 'hsl(60, 75%, 60%)',
-		// 		label: 'Yellow',
-		// 	},
-		// 	{
-		// 		color: 'hsl(90, 75%, 60%)',
-		// 		label: 'Light green',
-		// 	},
-		// 	{
-		// 		color: 'hsl(120, 75%, 60%)',
-		// 		label: 'Green',
-		// 	},
-		// ],
 	},
 	// image: {
 	// 	toolbar: ['imageStyle:full', 'imageStyle:side', '|', 'imageTextAlternative'],
