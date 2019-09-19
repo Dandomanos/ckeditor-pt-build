@@ -82,7 +82,6 @@
 	"scripts": {
 		"build": "webpack --mode production",
 		"lint": "eslint --quiet '**/*.js'",
-		"version": "conventional-changelog -p eslint -o CHANGELOG.md -r 0 && git add CHANGELOG.md",
 		"preversion": "npm run build; if [ -n \"$(git status src/ckeditor.js build/ --porcelain)\" ]; then git add -u src/ckeditor.js build/; fi"
 	},
 	"lint-staged": {
